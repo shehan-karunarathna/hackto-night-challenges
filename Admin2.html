@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Admin.css">
+   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+
+
+
+
+     <style>
+        table, th, td {
+          border: 1px solid rgb(11, 11, 11);
+          border-collapse: collapse;
+          margin: 20px;
+          text-align: center;
+        }
+      </style>
+   </head>
+<body>
+ 
+
+  <div class="sidebar">
+    <div class="logo-details">
+     
+      <span class="logo_name">BBH <br> Warehouse</span>
+    </div>
+      <ul class="nav-links">
+        
+
+          <li>
+          <a href="Admin1.html">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Products</span>
+          </a>
+        </li>
+        <li>
+    
+            
+          <a href="Admin2.html" class="active">
+            
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Advertisement</span>
+          </a>
+        </li>
+      
+        
+       
+      <li class="">
+          <a href="home.html" >
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Home</span>
+          </a>
+        </li>
+   
+        <li class="log_out">
+          <a href="./logout">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+
+
+
+
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+      <span class="dashboard">Admin Dashboard</span>
+      </div>
+      
+      <div class="profile-details">
+        <!--<img src="images/profile.jpg" alt="">-->
+         <img src="Profile-Icon.png" alt="">
+        <span class="admin_name">Admin</span>
+        
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Products</div>
+            <div class="number">3</div>
+           </div>
+         
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Advertisements</div>
+            <div class="number">3</div>
+            </div>
+         
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Salles</div>
+            <div class="number">4</div>
+           </div>
+          
+          
+        
+          
+           
+        </div>
+      </div>
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title"> <br>Total Products </div>
+        
+
+
+<table>
+      <thead>
+        <th style="width:400px">Product ID</th>
+        <th style="width:400px">Category</th>
+        <th style="width:100px"></th>
+        <th style="width:100px"></th>
+        <th style="width:70px"></th>
+        
+
+
+
+       
+      </thead>
+      <tbody>
+        <tr>
+            <td>001</td>
+            <td>Kids</td>
+            <td> <div class="button">
+              <a href="#">Delete</a></td>
+          <td> <div class="button">
+              <a href="#">Update</a></td>
+          <td> <div class="button">
+                <a href="#">Edit</a></td>
+        </tr>
+        <td>002</td>
+        <td>Man</td>
+        <td> <div class="button">
+          <a href="#">Delete</a></td>
+      <td> <div class="button">
+          <a href="#">Update</a></td>
+      <td> <div class="button">
+            <a href="#">Edit</a></td>
+
+        <tr>
+            <td>003</td>
+            <td>Women</td>
+            <td> <div class="button">
+              <a href="#">Delete</a></td>
+          <td> <div class="button">
+              <a href="#">Update</a></td>
+          <td> <div class="button">
+                <a href="#">Edit</a></td>
+
+       </tr>
+
+       <tr>
+       
+
+   </tr>
+
+
+
+   
+       
+      </tbody>
+    </table>
+
+          </table>
+        </div> 
+       </div>
+      </div>
+    </div>
+</table>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
+
